@@ -23,6 +23,7 @@ const WelcomeScreen = ({ navigation }) => {
         source={require("./assets/anhstarted.jpg")} 
         style={styles.welcomeImage}
       />
+      
       <Text style={styles.welcomeTitle}>Welcome to our store!</Text>
       <Text style={styles.welcomeSubtitle}>Ger your groceries in as fast as one hour</Text>
 
@@ -72,6 +73,8 @@ const PhoneInputScreen = () => {
             autoFocus
             withFlag
           />
+
+          <View style={styles.separatorLine} />
 
           <Text style={styles.orText}>Or connect with social media</Text>
 
@@ -127,20 +130,20 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#fff', 
     marginVertical: 10,
-    marginTop: 500, 
+    marginTop: 400, 
   },
   welcomeSubtitle: {
     fontSize: 16,
     color: '#fff', 
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 30,
     marginTop: 20, 
   },
   getStartedButton: {
-    backgroundColor: '#3498db',
+    backgroundColor: '#4caf50',
     paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 25,
+    paddingHorizontal: 120,
+    borderRadius: 15,
   },
   getStartedText: {
     color: '#fff',
@@ -186,6 +189,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 4, 
+    borderBottomWidth: 2, 
+    borderBottomColor: "#3498db", 
   },
   phoneTextContainer: {
     backgroundColor: "#fff",
@@ -222,6 +227,12 @@ const styles = StyleSheet.create({
     color: "#636e72",
     marginBottom: 20,
     fontStyle: "italic",
+  },
+  separatorLine: {
+    width: '100%', 
+    height: 1, 
+    backgroundColor: '#ddd', 
+    marginVertical: 20, 
   },
 });
 
